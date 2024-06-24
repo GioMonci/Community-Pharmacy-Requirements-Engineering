@@ -1,0 +1,110 @@
+Functional Requirments
+
+3.1.2 Dispensing System Functional Requirements
+3.1.2.1 The “dispensing”system shall guide the Pharmacist Technicians through the dispensing process by providing sequential instructions for each step which includes:
+3.1.2.1.1.1 Patient verification, Prescription validation, Medication selection, Labeling, Documentation, and Counseling.
+3.1.2.1.2 The dispensing system shall allow pharmacist technicians to verify medication name, ID, and expiration date before dispensing. 
+3.1.2.1.3 The dispensing system shall allow pharmacist technicians to verify medication dosages before dispensing.
+3.1.2.1.4 The dispensing system shall alert the pharmacist technician for potential drug allergies during the dispensing process.
+3.1.2.1.5 The dispensing system shall generate accurate labels for dispensing medications including the following information:
+3.1.2.1.5.1 Medication name, Dosage instructions, Warnings, Expiration date, Quantity, Patient name, Prescriber’s name, Prescription number, Pharmacy contact information. 
+3.1.2.2 The dispensing system shall maintain a record of all medications that are dispensed.
+3.1.2.3 The dispensing system must require patient ID verification before dispensing medications to them.
+3.1.2.4 The dispensing system shall maintain an audit trail for each individual dispensing activity, and contain the following information:
+3.1.2.4.2 Date and time, Pharmacist Technician responsible for dispensing, Patient name, Medication dispensed, Prescription number, relevant notes and comments associated with the dispensing activity.
+3.1.2.5 The dispensing system shall require pharmacist authorization before finalizing the dispensing process in the form of:
+3.1.2.5.2 a unique login credential for the pharmacist that is a secure authentication method such as biometric authentication. 
+3.1.2.6 The dispensing system shall track remaining refills for prescriptions then alert pharmacists when they are due. 
+3.1.2.7 The  dispensing system shall integrate with electronic prescriptions, displaying accurate prescription details for pharmacist technicians to verify before dispensing.
+
+3.2.2 Prescription System Functional Requirements
+3.2.2.1 The prescription system shall allow healthcare providers to electronically submit prescriptions to the pharmacy.
+3.2.2.1.1.1 Other Healthcare providers include Physicians, Dentists, etc. 
+3.2.2.1.2 The prescription system shall allow pharmacists to verify the accuracy of prescriptions, including Medication, dosage, and patient information.
+3.2.2.1.3 The prescription system shall require pharmacists’ authorization through a secure login before finalizing the prescription of a medication.
+3.2.2.1.4 The prescription system shall maintain a record of all prescriptions filled at the pharmacy.
+3.2.2.2 The prescription system shall generate transactional documentation, including prescription details and transaction records, for all prescription transactions.
+3.2.2.2.1 The prescription system shall store transactional documentation in the system’s database, for all prescription transactions.
+3.2.2.3 The prescription system shall allow for the transfer of prescriptions between pharmacies through secure electronic data interchange (EDI) systems.
+3.2.2.4 The prescription system shall guide patients through the prescription renewable process by giving text instructions for each step. 
+3.2.2.5 The prescription system shall provide status updates on the ‘prescription process’. 
+3.2.2.5.2 Prescription Process Steps: processed, verified, dispensed, ready for pickup.
+3.2.2.6 The prescription system shall alert pharmacists to errors with prescriptions, such as incomplete patient details.
+
+3.3.2 Medication Functional Requirements
+3.3.2.1 The medication system shall maintain a database, accessible to pharmacy staff, of all medications stored, which includes generic brands, named brands, strength, and dosage.
+3.3.2.1.2 The medication system shall allow pharmacists and pharmacist technicians to retrieve medication information, which includes usage instructions, side effects, and *contraindications.
+3.3.2.1.2.1 The medication system shall perform checks for drug interactions based on patients’ prescription profile.
+3.3.2.1.2.2 The medication system shall perform checks for patient allergies to medications based on the patient’s allergy profile.
+3.3.2.1.3 The medication system shall provide patients with pricing information for medications, which includes retail price, co-pay, and discounts.
+3.3.2.1.4 The medication system shall send an alert to pharmacist technicians when a medication is nearing expiration, providing a notification one week in advance.
+3.3.2.1.5 The medication system shall check for any medications that are affected by recalls and safety alerts.
+3.3.3 The medication system shall track medication expiration dates.
+3.3.4 The medication system shall monitor the availability of certain medications with 5-minute inventory updates when a pharmacist technician is searching for a medication.
+3.3.5 The medication system shall check for medication usage trends (+/-10%), production rate (+/-5%), and Wholesale prices (+/-5%) to aid in the informed purchasing decisions made by the pharmacy buyer.
+
+3.4.2 Health Insurance Functional Requirements
+3.4.2.1 The Health Insurance system shall generate documentation for insurance coverage, which shall include Explanation of Benefits (EOB) statements and Claim Denials.
+3.4.2.2 The Health Insurance system shall alert pharmacists and pharmacists technicians when a medication is not covered by the patient's insurance and needs authorization.
+3.4.2.3 The Health Insurance system shall calculate the patients’ copayments ‘accurately’ based on their insurance coverage on the medication(s) prescribed to them.
+3.4.2.3.2 The Health Insurance system shall verify patient insurance coverage by checking policy details and eligibility.
+3.4.2.3.3 The Health Insurance system shall allow a pharmacist to choose a medication that is pre approved by a patient’s insurance company.
+3.4.2.3.4 The Health Insurance system shall request insurance *formularies to determine coverage for the patient.
+3.4.2.3.5 The Health Insurance system shall handle verifying patient eligibility for health insurance claims.
+3.4.2.4 The Health Insurance system shall store Certificates of Insurance (COI) documentation for insurance coverage.
+3.4.2.5 The Health Insurance system shall provide insurance reimbursement payments, including paid amount and outstanding balances.
+3.4.2.6 The Health Insurance system shall align formulary coverage with medication dispensed on a per-prescription per-patient basis.
+3.4.2.7 The Health Insurance system shall provide Pharmacy Benefit Management (PBM) reports for insurance claim data, which includes:
+3.4.2.7.1 rejection rates, denial reasons, and reimbursement.
+
+3.5.2 Medical Inventory Functional Requirements		 	
+3.5.2.1 The Medical Inventory system shall track medication inventory levels, which includes stock quantities, expiration dates, and reorders.
+3.5.2.1.1 The Medical Inventory system shall generate alerts when a medication falls below a 30% threshold.
+3.5.2.1.2 The Medical Inventory system shall replenish a medication when it falls below a 30% threshold.
+3.5.2.2 The Medical Inventory system shall share real time inventory data between the medical inventory and purchasing system to aid in the purchasing of medication from Wholesalers. 
+3.5.2.3 The Medical Inventory system shall include an automated medication storage system to optimize inventory organization, to reduce prescription fill time to 10 minutes. 
+3.5.2.4 The Medical Inventory system shall support yearly inventory audits with *batch scanning to align with physical inventory counts with the system’s record.
+3.5.2.5 The Medical Inventory system shall support the proper disposal of expired and unused medication that complies with Florida’s Regulation Requirements.
+3.5.2.5.2 The Medical Inventory system shall allow pharmacist technicians to dispose of medications that are recalled in the inventory in accordance with Florida’s disposing regulations.
+3.5.2.6 The system shall save records of medications in the inventory, including:
+3.5.2.6.2 receipt, storage, dispensing, and disposal.
+3.5.2.7 The system shall monitor medication expiration dates and alert the pharmacist technician primary buyer when the medication is expired.
+3.5.2.8 The system shall provide inventory analysis reports of inventory data, which includes:
+3.5.2.8.2 current stock levels, expiration dates, usage trends, stockout incidents.
+
+
+
+Non Functional Requirments
+
+Performance Requirements
+4.1.1 The dispensing function shall respond to pharmacist technician actions within 2 seconds under standard conditions. 
+4.1.2 Medication information retrieval shall take no longer than 1 second. 
+4.1.3 Health insurance claims processing, initiated by the pharmacist assistant, shall be completed within 5 seconds per transaction. 
+4.1.4 Inventory item lookups shall execute within 3 seconds per transaction.
+
+Safety Requirements
+4.2.1 The prescription function shall comply with HIPAA regulation of the Security Rule for patient data protection.
+4.2.2 The health insurance function shall comply with CMS regulations for Medicare claims processing. 
+4.2.3 All changes to health insurance data shall be logged and auditable for the use of pharmacy assistants.
+
+Security Requirements
+4.3.1 Prescription data shall be encrypted during ‘transmission’ using AES-256 encryption with secure key management.
+4.3.1.1 Encryption keys shall be securely generated, stored, and rotated. 
+4.3.2 Prescription data shall be encrypted during ‘storage’ using AES-256 encryption with secure key management.
+4.3.3 The medication database shall include a daily automatic data backup feature to ensure data integrity and prevent any data loss in a case of file corruption and unforeseen events such as natural disasters.
+4.3.4 Health insurance data access shall be restricted based on user roles, making sure that only authorized users such as a pharmacist shall view and modify insurance information.
+
+Software Quality Attributes
+4.4.1 The dispensing function shall have a system uptime of at least 99% over a 30-day time frame.
+4.4.1.1 This shall exclude scheduled maintenance times.
+4.4.2 The dispensing UI’s usability shall let new pharmacist technicians to dispense medication to patients with around 30 minutes of training.
+4.4.3 The dispensing function shall be scaled to support an increase in prescription volume by at least 50% within a 5-month period. 
+4.4.4 The prescription service shall be available 98% of the time during designated operating hours, with the exception of scheduled maintenance windows announced in advance.
+4.4.5 Medication information shall be accessible to patients with disabilities, to comply with WCAG 2.0 accessibility.
+4.4.6 The medication function shall scale to accommodate an increase in medication database size by at least 100%.
+4.4.7 The inventory function of medication storage shall be scaled to allow for an increase in the number of medication items by at least 50%.
+
+Other Requirements 
+5.1 The prescription function shall integrate with electronic health record (EHR) systems using HL7 standards.
+5.2 Inventory data backups shall be done every 7 days, adhering to a data retention policy of reducing data loss.
+5.3 The inventory management UI shall support group updates for *Bulk Inventory updates.
